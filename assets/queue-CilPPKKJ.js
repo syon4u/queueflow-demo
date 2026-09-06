@@ -1,0 +1,1 @@
+const e=r=>r.toLocaleTimeString("en-US",{hour:"2-digit",minute:"2-digit",hour12:!0}),n=r=>{if(r<1)return"< 1 min";if(r<60)return`${Math.round(r)} min`;{const t=Math.floor(r/60),o=Math.round(r%60);return o===0?`${t}h`:`${t}h ${o}m`}};export{n as a,e as f};

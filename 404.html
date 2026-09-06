@@ -1,1 +1,11 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"/><title>QueueFlow</title><script>var pathSegmentsToKeep=1;var l=window.location;l.replace(l.protocol+'//'+l.hostname+(l.port?':'+l.port:'')+l.pathname.split('/').slice(0,1+pathSegmentsToKeep).join('/')+'/?/'+l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g,'~and~')+(l.search?'&'+l.search.slice(1).replace(/&/g,'~and~'):'')+l.hash);</script></head><body></body></html>
+<!doctype html>
+<html><head><meta charset="utf-8"><title>QueueFlow</title>
+<script>
+// GitHub Pages SPA fallback: preserve the deep link and hand it to index.html.
+(function () {
+  var base = location.pathname.split('/').slice(0, 2).join('/'); // "/queueflow-demo" or ""
+  var rest = location.pathname.slice(base.length) + location.search + location.hash;
+  sessionStorage.setItem('qf:redirect', rest);
+  location.replace(base + '/');
+})();
+</script></head><body></body></html>
