@@ -13,9 +13,16 @@
     <meta property="og:type" content="website" />
 
     <meta name="twitter:card" content="summary_large_image" />
-    <script type="module" crossorigin src="/queueflow-demo/assets/index-IOfd2rgP.js"></script>
-    <link rel="stylesheet" crossorigin href="/queueflow-demo/assets/index-Brrxw4tB.css">
-  <link rel="manifest" href="/queueflow-demo/manifest.webmanifest"><script id="vite-plugin-pwa:register-sw" src="/queueflow-demo/registerSW.js"></script></head>
+
+    <!-- Explicit icon links: without them browsers probe /favicon.ico and
+         /apple-touch-icon.png at the origin root, which 404s on a sub-path deploy. -->
+    <link rel="icon" href="/queueflow-demo/favicon.ico" sizes="16x16" />
+    <link rel="icon" type="image/png" href="/queueflow-demo/pwa-192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="/queueflow-demo/pwa-192.png" />
+    <meta name="theme-color" content="#2563eb" />
+    <script type="module" crossorigin src="/queueflow-demo/assets/index-rHbVrqjt.js"></script>
+    <link rel="stylesheet" crossorigin href="/queueflow-demo/assets/index-fWGA1Tfu.css">
+  <link rel="manifest" href="/queueflow-demo/manifest.webmanifest"></head>
 
   <body>
     <div id="root"></div>
